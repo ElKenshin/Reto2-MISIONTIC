@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georama', sans-serif;
+    background-image: #ebebeb;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 4rem;
+    grid-template-areas: 
+        "header header header header"
+        "menuLat contenido contenido contenido"
+        "blank contenido contenido contenido"
+        "footer footer footer footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    padding-inline: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #5A1818;
+}
+
+.header__item {
+    padding: 1rem;
+}
+
+.header__item img {
+    height: 2.5rem;
+}
+
+.icono {
+    display: none;
+}
+
+.responsive {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #5A1818;
+    padding-bottom: 3rem;
+}
+
+.responsive .header__item:not(:first-child) {
+    padding-inline: 4rem;
+}
+
+.responsive .header__item:first-child {
+    padding-inline: 2rem;
+}
+
+
+.menuLat {
+    grid-area: menuLat;
+    background-color: #C89E50;
+    color: #5A1818;
+    text-align: center;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-left: 5rem;
+    box-shadow: 0 2px 2px rgba(50, 50, 50, 1);
+    position: sticky;
+}
+
+.menuLat ul {
+    padding: 0.2rem;
+    padding-left: 1.5rem;
+    text-decoration: underline;
+    text-align: start;
+}
+
+.misionTic {
+    height: 4rem;
+    background-image: url(img/misionTic.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.contenido {
+    grid-area: contenido;
+    margin-right: 10rem;
+}
+
+.contenido p {
+    text-align: justify;
+
+}
+
+.contenido img {
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#intro img {
+    width: 65%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#que-es, #utensilios, #preparacion {
+    margin-top: 6rem;
+}
+
+#utensilios img{
+    width: 60%;
+}
+
+#preparacion img {
+    width: 90%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #5A1818;
+    color: #ebebeb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo info acerca" "disclaimer disclaimer disclaimer";
+    gap: 2rem;
+    padding: 2rem;
+    font-size: 14px;
+}
+
+.footer .logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logo img {
+    padding-top: 1.5rem;
+    width: 70%;
+}
+
+.footer .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .acerca {
+    grid-area: acerca;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acerca-btn {
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.acerca-btn:hover {
+    background-color: #FFF;
+    color: #5A1818;
+}
+
+.footer .disclaimer {   
+    grid-area: disclaimer;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width:650px) {
+
+    .header__item .icono {
+        display: block;
+    }
+
+    .header .header__item:not(:first-child) {
+        display: none;
+    }
+
+    .header__item .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .contenedor {
+        grid-template-areas: 
+            "header header header header"
+            "menuLat menuLat menuLat menuLat"
+            "contenido contenido contenido contenido"
+            "footer footer footer footer"
+        ;
+    }
+    
+    .menuLat {
+        margin-right: 4rem;
+        width: 40%;
+    }
+
+    .contenido {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "logo" "info" "acerca" "disclaimer";
+    }
+}
+
+@media screen and (max-width:800px) {
+    .contenido {
+        margin-right: 3rem;
+    }
+
+    .menuLat {
+        margin-left: 3rem;
+    }
+}

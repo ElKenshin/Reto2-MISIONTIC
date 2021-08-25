@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafesitos</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts y fuente Georama -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body onresize="repliegue()" onload="imagen()">
+    <div class="contenedor">
+
+        <header id="header" class="header">
+    
+            <!-- Para desplegar el menú -->
+            <div class="header__item">
+                <a href="javascript:void(0);" class="icono" onclick="despliegue()"><i class="fas fa-bars fa-lg"></i></a>
+            </div>
+    
+            <div class="header__item">
+                <a href="index.html" class="logo"><img src="img/cafe-logo.png" alt="Logo"></a>
+            </div>
+    
+            <div class="header__item">
+                <a href="index.html">Café Filtrado</a>
+            </div>
+        
+            <div class="header__item">
+                <a href="acerca.html">Acerca de</a>
+            </div>
+    
+        </header>
+    
+        <aside id="lateral" class="menuLat">
+        </aside>
+    
+        <main class="contenido">
+            <h2>Daniel Correa</h2>
+            <br>
+            <p>Estudiante de MISION TIC Grupo 32 de Industrias Creativas Digitales con TI 1.023.624.609.</p>
+            <br>
+            <p>Soy de Medellín, tengo 16 años y actualmente curso grado 11. Aspiro seguir aprendiendo para eventualmente dedicarme a trabajar en mi pasión, la programación.</p>
+        </main>
+    
+        <footer class="footer">
+            <div class="logo">
+                <h2>Cafesitos</h2>
+                <img src="img/cafe-logo.png" alt="Logo">
+            </div>
+
+            <div class="info">
+                <h4>Horarios de atención:</h4>
+                <p>7:00am - 5:00pm</p>
+                <br>
+                <h4>Teléfono:</h4>
+                <p><i class="fas fa-phone-alt"></i> 321 45 67</p>
+                <br>
+                <h4>Celular:</h4>
+                <p><i class="fas fa-mobile-alt"></i> +57 3182678013</p>
+                <br>
+                <h4>Dirección:</h4>
+                <p>Calle 1 # 2-3</p>
+            </div>
+
+            <div class="acerca">
+                <p>Página creada por:<br><b>Daniel Correa Botero</b><br>Para dar solución al Reto 2 de MISION TIC</p>
+                <br>
+                <a href=""><button class="acerca-btn">Ver más info</button></a>
+            </div>
+
+            <div class="disclaimer">
+                <p>Esta página es experimental, mucha información es, por ende, ficticia. El conocimiento sobre el proceso del café ha sido extraído de diversas fuentes y de conocimiento propio, no tiene rigor científico especialmente.</p>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafesitos</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts y fuente Georama -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<!-- Resize para replegar el menú responsive automáticamente -->
+<body onresize="repliegue()">
+    <div class="contenedor">
+
+        <header id="header" class="header">
+    
+            <!-- Para desplegar el menú (solo responsive) -->
+            <div class="header__item">
+                <a href="javascript:void(0);" class="icono" onclick="despliegue()"><i class="fas fa-bars fa-lg"></i></a>
+            </div>
+            
+            <!-- Logo que solo se ve en vista PC -->
+            <div class="header__item">
+                <a href="index.html" class="logo"><img src="img/cafe-logo.png" alt="Logo"></a>
+            </div>
+    
+            <div class="header__item">
+                <a href="index.html">Café Filtrado</a>
+            </div>
+        
+            <div class="header__item">
+                <a href="acerca.html">Acerca de</a>
+            </div>
+    
+        </header>
+        
+        <aside class="menuLat">
+            <h4>Navega por la página</h4>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#que-es"><p>¿Que es?</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#utensilios"><p>Utensilios</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#preparacion"><p>Preparación</p></a></li>
+                </ul>
+
+            </nav>
+        </aside>
+    
+        <main class="contenido">
+            <div id="intro">
+                <h1>Café Colombiano</h1>
+                <img src="img/Cafe-colombiano-3.jpg" alt="Cafe Colombiano">
+                <p>“Colombia es el país con el mejor café suave del mundo gracias al proceso de producción y sus condiciones naturales así como la altitud, latitud y temperatura ideales para su cultivo. También por el trabajo del caficultor y de la recolección rigurosa de los granos maduros”, dice Parmenio Angarita, director del centro de formación cafetera Educafés en Bogotá.</p>
+            </div>
+
+            <div id="que-es">
+                <h1>¿Qué es un Café Filtrado?</h1>
+                <br><br><br>
+                <p>Se define el café de filtro o filtrado como: <i>"Es aquel café que se hace con algún tipo de cafetera que implica que exista un filtro donde se deposita el café molido, sobre el que se vierte agua caliente para obtener la infusión del café mediante la fuerza de la gravedad."</i></p>
+                <img src="img/cafe-filtro.jpg" alt="Café siendo filtrado">
+                <p>Recientemente, el café de filtro está ampliando su popularidad, muy arraigada ya en varias culturas del mundo, en las que hacer este tipo de café es todo un arte por simple que parezca. Y es que en verdad es bastante sencilla por su propia composición ya que solamente tiene 2 ingredientes, café y agua. Es decir, necesitamos un producto soluble (semillas tostadas de café) y un disolvente (agua) que sea capaz de arrastrar y quedarse con los elementos solubles del café. A partir de ahí, todo lo demás, se reduce a “jugar” para obtener el mejor resultado posible, o más acorde a tu gusto personal.</p>
+                <br>
+                <p><i>"Los métodos manuales para elaborar café son una opción en alza que está impulsando la resurrección de métodos clásicos, por ejemplo la Chemex con más de 70 años de historia y el nacimiento, también, de nuevos dispositivos, como la AeroPress que se han convertido en artículos de deseo para todo tipo de público amante del café."</i></p>
+                <br><br><br>
+                <h3>Tipos de filtrados de café</h3>
+                <br><br>
+                <p>Para preparar la infusión de café existen diferentes métodos que independientemente del café y agua que utilicemos, nos dan como resultado bebidas con diferentes matices. Las nuevas corrientes que han aparecido entorno al café han cambiado a lo largo de los años las formas en que probamos el café, con el gran aliciente de que cuanta más información tenemos del producto y más métodos conocemos, podemos valorar mejor las diferentes características de cada bebida en beneficio a nuestro paladar. </p>
+                <br>
+                <p>Podríamos englobar los distintos métodos de extracción en dos grandes grupos y los dos nos plantean retos y estrategias diferentes para poder sacar el máximo beneficio de nuestras extracciones, la cocción (entiéndase como forma de preparación) y el filtrado.</p>
+                <br>
+                <p><b>Cocción: </b>es la extracción de la parte soluble del café por contacto directo del agua, durante todo el tiempo que dure el proceso, sin necesidad de temperatura (esta solo es una variable, lo veremos mas adelante), es decir que todo el café que pusimos está en contacto con toda el agua que utilizamos como disolvente, durante todo el tiempo que nosotros queramos. Ejemplo: puchero, french press…</p>
+                <br>
+                <p><b>Filtrado: </b>es la extracción de la parte soluble del café por contacto directo del agua, agua que hay que puntualizar, solo esta en contacto con el café mientras atraviesa el lecho4, es decir, que durante la elaboración, cada gota de agua solo pasa un tiempo “x”, menor que el total, en contacto con el café. Al igual que en el caso anterior no es necesaria una temperatura concreta. Ejemplo: cafetera de goteo (melitta), cafetera italiana (moka).</p>
+            </div>
+
+            <div id="utensilios">
+                <h1>Utensilios para el Café</h1>
+                <br><br><br>
+                <h3>El molinillo:</h3>
+                <p>El molinillo de café o molino de café se trata de una herramienta empleada en la cocina para moler los granos de café y prepararlos para degustar una taza de café. El café molido inmediatamente antes de su preparación hace una importante diferencia en la calidad de la bebida. El café en grano tiene menos exposición al aire al conservar su corteza, por eso no se oxida tan rápido y conserva mejor su aroma y sabor. Existe una amplia variedad de molinillos, en general no suelen ser muy caros, e incluso algunas cafeteras de espresso los traen incorporados. Mas allá del método elegido, siempre notaremos la diferencia del café recién molido.</p>
+                <br>
+                <img src="img/molino.jpg" alt="Molino">
+                <br><br>
+                <h3>Balanza:</h3>
+                <p>La balanza se ha convertido en uno de los accesorios más importantes en la elaboración del café. Tanto para el espresso como para otros métodos de filtrado de café, es fundamental pesar la cantidad de café y la cantidad de agua. Sólo si pesa ambos ingredientes, puede lograr la justa proporción entre el café y el agua y puede mantener la consistencia y la precisión adecuadas.</p>
+                <br>
+                <img src="img/balanza.jpg" alt="Balanza">
+                <br><br>
+                <h3>Filtro:</h3>
+                <p>Ciertamente, usted necesitará el equipo o método de extracción de café. Para nosotros, no hay bueno o malo, pero es importante saber que el diseño y la clase de filtro impactará el perfil del sabor. Un componente principal del equipo para preparar café es el filtro. <br> El material está hecho normalmente de papel, tela o metal y su porosidad tiene un gran impacto en lo que llamamos la textura de la bebida. Esto no afecta directamente el sabor. La textura se compone esencialmente de todos esos ingredientes que no son solubles, sedimentos de café (pequeñas partículas visibles) y aceites del café (se pueden ver como una capa brillante en la superficie del café - no se preocupe, no es jabón).</p>
+                <br>
+                <img src="img/filtro.jpg" alt="Filtro">
+                <br><br>
+                <h3>Cafetera:</h3>
+                <p>Si usted considera utilizar métodos de infusión, la cafetera es fundamental. Para verter agua en el café molido, nosotros recomendamos cafeteras con cuello de ganso porque usted podrá controlar mejor el flujo de agua. Si a usted no le preocupa invertir, nosotros le recomendamos también un hervidor eléctrico para calentar el agua y ajustar la temperatura. El punto aquí es que si usted calienta el agua por separado y después la transfiere a una cafetera, lo que puede suceder es que el agua pierda temperatura. La manera en que la temperatura impacta la extracción de café es algo más que usted puede descubrir aquí.</p>
+                <br>
+                <img src="img/cafetera.jpg" alt="Cafetera">                
+            </div>
+
+            <div id="preparacion">
+                <h1>Preparación Café Filtrado</h1>
+                <br><br><br>
+                <p>Primero, se debe moler el café, éste debe ser tostado para llegar al resultado deseado. Las cantidades de café en relación con el agua a utilizar varían en función de como te gusta el café, incluso del tipo de café, molienda realizada, etc.</p>
+                <br>
+                <p>Segundo, calientas el agua hasta hervir. Pones el filtro, viertes esa agua caliente en el filtro sin el café mojando por completo el filtro. De esta forma eliminas impurezas del papel que pueden llegar al café en caso de no hacer este proceso.</p>
+                <br>
+                <p>Tercero, una vez hervida el agua la dejas enfriar hasta los noventa y dos grados centígrados, puedes tener  un termómetro para comprobar la temperatura. En caso contrario deja pasar unos  40 o 45 segundo para que baje la temperatura del agua.</p>
+                <br>
+                <p>Cuarto, pones en el filtro la cantidad de café acorde a la cantidad de agua que vas a utilizar</p>
+                <br>
+                <p>Quinto, preinfusionas el café unos treinta segundos, simplemente humedeciendo el café  con agua, sin que llegue demasiada agua al recipiente.</p>
+                <br>
+                <p>Por último, inmediatamente después del preinfusionado el café viertes el resto del agua con lentitud, haciendo círculos en el filtro. Todo el proceso de infusionado debe durar unos cuatro minutos.</p>
+                <br>
+                <p>Esta forma de hacer el café nos permite controlar todos las pequeñas partes del proceso. Obteniendo una extracción de un café suave  pero con todo el aroma y el sabor del café.</p>
+                <br>
+                <img src="img/proceso.jpg" alt="Proceso Filtración">
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="logo">
+                <h2>Cafesitos</h2>
+                <img src="img/cafe-logo.png" alt="Logo">
+            </div>
+
+            <div class="info">
+                <h4>Horarios de atención:</h4>
+                <p>7:00am - 5:00pm</p>
+                <br>
+                <h4>Teléfono:</h4>
+                <p><i class="fas fa-phone-alt"></i> 321 45 67</p>
+                <br>
+                <h4>Celular:</h4>
+                <p><i class="fas fa-mobile-alt"></i> +57 3182678013</p>
+                <br>
+                <h4>Dirección:</h4>
+                <p>Calle 1 # 2-3</p>
+            </div>
+
+            <div class="acerca">
+                <p>Página creada por:<br><b>Daniel Correa Botero</b><br>Para dar solución al Reto 2 de MISION TIC</p>
+                <br>
+                <a href=""><button class="acerca-btn">Ver más info</button></a>
+            </div>
+
+            <div class="disclaimer">
+                <p>Esta página es experimental, mucha información es, por ende, ficticia. El conocimiento sobre el proceso del café ha sido extraído de diversas fuentes y de conocimiento propio, no tiene rigor científico especialmente.</p>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>
